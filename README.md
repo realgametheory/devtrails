@@ -393,36 +393,9 @@ The fraud engine runs asynchronously on every auto-triggered claim event and out
 
 ### Architecture Diagram (High-Level)
 
-```
-┌──────────────────────────────────────────────────────────┐
-│                    MEOWVAULT PLATFORM                     │
-├──────────────┬───────────────────────┬───────────────────┤
-│  Rider PWA   │   Admin Dashboard     │  Disruption       │
-│  (React)     │   (React)             │  Monitor Service  │
-└──────┬───────┴───────────┬───────────┴────────┬──────────┘
-       │                   │                    │
-       ▼                   ▼                    ▼
-┌──────────────────────────────────────────────────────────┐
-│                   FastAPI Backend                        │
-│  ┌─────────────┐  ┌──────────────┐  ┌─────────────────┐ │
-│  │ Risk &      │  │ Claims &     │  │ Fraud Detection │ │
-│  │ Pricing     │  │ Payout       │  │ Engine          │ │
-│  │ Engine      │  │ Service      │  │ (Isolation      │ │
-│  │ (XGBoost +  │  │ (Razorpay    │  │ Forest +        │ │
-│  │ Claude NLP) │  │ Sandbox)     │  │ GPS check)      │ │
-│  └─────────────┘  └──────────────┘  └─────────────────┘ │
-└──────────────────────────┬───────────────────────────────┘
-                           │
-         ┌─────────────────┼───────────────────┐
-         ▼                 ▼                   ▼
-   PostgreSQL           Redis             External APIs
-   (policies,         (trigger           IMD / Open-Meteo
-    claims,            cache,            CPCB / AQI India
-    riders)            sessions)         NewsAPI + Claude
-                                         Razorpay Sandbox
-                                         MoPNG (mock)
-                                         Platform (mock)
-```
+<br>
+<img src="https://github.com/RealGameTheory/Devtrails/blob/main/images/DevTrails_arch.png" alt="Alt text" width="1000" height="900">
+</br>
 
 ---
 
