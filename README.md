@@ -292,7 +292,7 @@ Risk Score would drop to ~28. Premium: ₹49. Coverage cap: ₹3,500.
 ### 5.5 Plain-Language Explanation (What Arjun Sees in the App)
 
 ```
-🐾 Your MeowVault quote for Mar 10–17
+ Your MeowVault quote for Mar 10–17
 
   Weekly premium:  ₹130
   Coverage cap:    ₹4,200
