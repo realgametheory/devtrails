@@ -23,11 +23,11 @@
 
 ## 1. The Problem
 
-India's food delivery partners are the invisible backbone of urban life. On a good day, a Swiggy or Zomato rider in Bengaluru earns ₹800–₹1,200 in net income. On a bad day — a cloudburst in Koramangala, a restaurant shuttered because it ran out of cooking gas, a union strike, or a heatwave — their earnings fall to zero while their costs (fuel, phone recharge, EMIs) remain fixed.
+India's food delivery partners are the invisible backbone of urban life. On a good day, a Swiggy or Zomato rider in Bengaluru earns ₹800–₹1,200 in net income. On a bad day, a cloudburst in Koramangala, a restaurant shuttered because it ran out of cooking gas, a union strike, or a heatwave and their earnings fall to zero while their costs (fuel, phone recharge, EMIs) remain fixed.
 
 External disruptions cause gig workers to lose **20–30% of monthly income**. They have no employer, no safety net, and no insurance that covers *income loss from events outside their control*.
 
-**MeowVault** fills that gap. It is a fully AI-driven parametric insurance platform that monitors real-world disruptions, calculates a personalised weekly premium using live data from weather feeds, political news, platform signals, and economic indicators — and pays out lost wages automatically, without the rider filing a single form.
+**MeowVault** fills that gap. It is a fully AI-driven parametric insurance platform that monitors real-world disruptions, calculates a personalised weekly premium using live data from weather feeds, political news, platform signals, economic indicators and pays out lost wages automatically, without the rider filing a single form.
 
 >  **Coverage scope:** MeowVault covers **income loss only**. It strictly excludes health, life, accident, and vehicle repair coverage.
 
@@ -42,17 +42,17 @@ The Israel-Iran conflict and the closure of the Strait of Hormuz disrupted 90% o
 
 The result for Bengaluru's food delivery riders was immediate and brutal:
 - The **Bangalore Hotels Association** reported that only **10% of restaurants** in the city received their gas supply on March 9–10, 2026.
-- Over **100 eateries** — from iconic darshinis like Vidyarthi Bhavan to neighbourhood dhabas — shut their kitchens.
+- Over **100 eateries** — from iconic darshinis like Vidyarthi Bhavan to neighbourhood dhabas shut their kitchens.
 - With restaurants closed or running with limited menus, **Swiggy and Zomato order volumes in Bengaluru dropped sharply**, leaving riders logged on but with nowhere to pick up from.
 - Riders reported waiting 2–3 hours between orders in zones like Indiranagar, HSR Layout, and JP Nagar — zones that are normally among the busiest in the country.
 
-A delivery partner's income collapsed — not because of weather, not because of their performance, but because a geopolitical conflict 3,000 km away made restaurant kitchens go dark.
+A delivery partner's income collapsed, not because of weather, not because of their performance, but because a geopolitical conflict 3,000 km away made restaurant kitchens go dark.
 
 ###  Algorithmic Pay Cuts & Shadow Banning (Early 2026)
-In early 2026, the **Karnataka App-Based Drivers Union** documented widespread "shadow banning" — a practice where the platform's algorithm quietly deprioritises order assignments for riders who have participated in protests or logged complaints, without formal deactivation. Affected riders saw their daily order counts drop from 15–20 to 3–5 with no notification or appeal process.
+In early 2026, the **Karnataka App-Based Drivers Union** documented widespread "shadow banning", a practice where the platform's algorithm quietly deprioritises order assignments for riders who have participated in protests or logged complaints, without formal deactivation. Affected riders saw their daily order counts drop from 15–20 to 3–5 with no notification or appeal process.
 
 ###  The December 2025 / New Year Strike Disruptions
-On **December 25 and December 31, 2025**, over two lakh gig workers across India participated in coordinated strikes led by the Indian Federation of App-Based Transport Workers (IFAT). In Bengaluru, workers protesting unsafe 10-minute delivery mandates and arbitrary ID blocking faced retaliation — with the Karnataka Gig Workers Act (2025) triggered but enforcement lagging. During both strike days, riders who did *not* strike still lost income due to zone-wide delivery disruptions and platform traffic drops.
+On **December 25 and December 31, 2025**, over two lakh gig workers across India participated in coordinated strikes led by the Indian Federation of App-Based Transport Workers (IFAT). In Bengaluru, workers protesting unsafe 10-minute delivery mandates and arbitrary ID blocking faced retaliation with the Karnataka Gig Workers Act (2025) triggered but enforcement lagging. During both strike days, riders who did *not* strike still lost income due to zone-wide delivery disruptions and platform traffic drops.
 
 These three events, all in Bengaluru, all within 90 days, form the exact scenario MeowVault is designed to protect against.
 
@@ -113,7 +113,7 @@ Arjun has no employer. He is a "delivery partner," not an employee. The Karnatak
 ---
 
 ####  Scenario 4 — Platform Algorithmic Shutdown / Shadow Ban (Early 2026)
-**What happened:** Karnataka App-Based Drivers Union documented cases in early 2026 where riders participating in protests had their order assignments algorithmically suppressed. Riders received no formal deactivation notice — just a sudden, unexplained drop in orders. This falls under the "algorithmic control" problem highlighted by IFAT's strikes.
+**What happened:** Karnataka App-Based Drivers Union documented cases in early 2026 where riders participating in protests had their order assignments algorithmically suppressed. Riders received no formal deactivation notice, just a sudden, unexplained drop in orders. This falls under the "algorithmic control" problem highlighted by IFAT's strikes.
 
 **Income impact:** Arjun, after filing a complaint about unfair incentive cuts, notices his order rate drops from 18/day to 4/day. No notification, no appeal. The Karnataka Gig Workers Act 2025 applies, but enforcement is slow.
 
