@@ -42,9 +42,9 @@ The Israel-Iran conflict and the closure of the Strait of Hormuz disrupted 90% o
 
 The result for Bengaluru's food delivery riders was immediate and brutal:
 - The **Bangalore Hotels Association** reported that only **10% of restaurants** in the city received their gas supply on March 9–10, 2026.
-- Over **100 eateries** — from iconic darshinis like Vidyarthi Bhavan to neighbourhood dhabas shut their kitchens.
+- Over **100 eateries** from iconic darshinis like Vidyarthi Bhavan to neighbourhood dhabas shut their kitchens.
 - With restaurants closed or running with limited menus, **Swiggy and Zomato order volumes in Bengaluru dropped sharply**, leaving riders logged on but with nowhere to pick up from.
-- Riders reported waiting 2–3 hours between orders in zones like Indiranagar, HSR Layout, and JP Nagar — zones that are normally among the busiest in the country.
+- Riders reported waiting 2–3 hours between orders in zones like Indiranagar, HSR Layout, JP Nagar and zones that are normally among the busiest in the country.
 
 A delivery partner's income collapsed, not because of weather, not because of their performance, but because a geopolitical conflict 3,000 km away made restaurant kitchens go dark.
 
@@ -82,7 +82,7 @@ Arjun has no employer. He is a "delivery partner," not an employee. The Karnatak
 ####  Scenario 1 — LPG Crisis / Restaurant Kitchen Shutdown (Active: March 2026)
 **What happened:** The Israel-Iran war disrupted global LPG supply chains. India's LPG Control Order 2026 capped commercial supply at 20%. In Bengaluru, 90%+ of restaurants dependent on cylinder gas could not operate. Online food orders on Swiggy/Zomato in affected zones collapsed.
 
-**Income impact on Arjun:** Operating from HSR Layout, Arjun's regular restaurant partners — a South Indian chain and a biryani house — both shut kitchens on March 10. He logged 9 hours online and completed only 3 orders. Estimated income: ₹180 vs his daily average of ₹980.
+**Income impact on Arjun:** Operating from HSR Layout, Arjun's regular restaurant partners, a South Indian chain and a biryani house both shut kitchens on March 10. He logged 9 hours online and completed only 3 orders. Estimated income: ₹180 vs his daily average of ₹980.
 
 **MeowVault trigger:** Activated when a geopolitical supply-chain index (tracking LPG/fuel disruption severity) crosses threshold AND platform order-density in rider's active zone drops below 40% of the 30-day average for 4+ hours.
 
