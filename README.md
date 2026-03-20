@@ -398,6 +398,55 @@ The fraud engine runs asynchronously on every auto-triggered claim event and out
 </br>
 
 ---
+## 10. Adversarial Defense & Anti-Spoofing Strategy
+
+> **Threat:** A coordinated syndicate of 500+ riders using GPS-spoofing apps to fake location in red-alert weather zones, triggering mass false payouts via Telegram-coordinated fraud rings.
+
+### 10.1 The Differentiation — Genuine Stranded Rider vs. Bad Actor
+
+MeowVault's claim validation does **not** trust GPS alone. A genuinely stranded rider produces a coherent, multi-signal footprint that a spoofed device cannot fully replicate:
+
+| Signal | Genuine Rider | GPS Spoofer |
+|---|---|---|
+| **Accelerometer / Gyroscope** | Consistent with stationary or slow movement in rain | Flat / artificial — spoofing apps don't fake IMU sensors |
+| **Battery drain pattern** | Normal outdoor usage (screen on, GPS active, hotspot) | Anomalously low — rider is indoors, phone idle |
+| **Network cell tower data** | Cell towers match declared active zone | Towers match home location, not claimed flood zone |
+| **Platform login activity** | No orders attempted (consistent with being stuck) | No orders, but last login from a different IP/location cluster |
+| **Historical zone presence** | Rider has GPS history in that zone over past weeks | First-time appearance in that zone on a red-alert day |
+
+### 10.2 The Data — Detecting a Coordinated Fraud Ring
+
+Beyond individual signals, ring behaviour has a distinct statistical fingerprint:
+
+- **Claim spike correlation:** If 50+ riders all trigger claims within the same 10-minute window in the same zone, the system flags it as a potential coordinated event — genuine disruptions cause gradual claim accumulation, not a simultaneous spike.
+- **Social graph clustering:** Riders whose onboarding metadata (device fingerprint, referral chain, registration time) clusters together are tagged as a cohort. Mass claims from a cohort trigger automatic ring-fraud review.
+- **Zone corroboration mismatch:** The system cross-checks independent IoT sensors, traffic cameras, and Zomato/Swiggy zone-level order data. If official platform data shows orders still flowing in a zone, mass GPS-based claims from that zone are suppressed.
+- **Telegram / coordination signal (passive):** Abnormal claim timing patterns (all within minutes of each other) are flagged even without access to private communications — the timing itself is the signal.
+
+### 10.3 The UX Balance — Protecting Honest Riders
+
+A genuine rider in bad weather may also have poor GPS signal or intermittent network. MeowVault handles this with a **three-tier response**, not a binary approve/reject:
+
+```
+Fraud Score < 30  →  AUTO-APPROVE + instant UPI payout
+                      (no friction for honest riders)
+
+Fraud Score 30–60 →  SOFT HOLD (2-hour window)
+                      Rider gets: "We're verifying your claim due to
+                      high claim volume in your zone. You'll hear back
+                      in 2 hours. No action needed from you. 🐾"
+                      System runs deeper checks silently.
+
+Fraud Score > 60  →  MANUAL REVIEW FLAG
+                      Rider notified transparently. Can submit a
+                      voluntary 15-second video or photo as optional
+                      supporting evidence (never mandatory).
+                      Claim resolved within 4 hours.
+```
+
+**Key principle:** The soft hold is invisible to honest riders — they simply receive their payout slightly later. Only bad actors who cannot produce corroborating multi-sensor evidence are ultimately rejected.
+
+---
 
 > **MeowVault — Protecting Every Delivery, Every Week. 🐾**
 >
