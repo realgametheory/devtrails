@@ -1,0 +1,19 @@
+{
+  "name": "MeowVault — Income Protection",
+  "short_name": "MeowVault",
+  "description": "AI-Driven Parametric Income Protection for Gig Delivery Workers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060c14",
+  "theme_color": "#00d4b8",
+  "orientation": "any",
+  "categories": ["finance", "insurance"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
